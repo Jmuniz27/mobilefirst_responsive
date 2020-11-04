@@ -605,7 +605,7 @@ main{
 /* Scroll horizontal CSS */
 .plans-container--slider{
     display: flex;
-    height: 316px;
+    height: 320px;
     overflow-x: scroll;
     overflow-y: hidden;
     overscroll-behavior-x: contain;
