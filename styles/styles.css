@@ -690,12 +690,13 @@ main{
 
 .footer-container{
     width: 100%;
-    height: auto;
+    height: 150px;
     background-color: var(--bitcoin-orange);
 }
 
 .container-info--footer{
     width: 70%;
+    height: 150px;
     display: flex;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -708,7 +709,6 @@ main{
     flex-direction: column;
     list-style: none;
     margin-bottom: 8px;
-    font-size: 1.4rem;
 }
 .links-footer a{
     text-decoration: none;
