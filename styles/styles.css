@@ -589,13 +589,23 @@ main{
     font-weight: 500;
 }
 
+/* Scroll horizontal CSS */
+.plans-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 .plans-container--card{
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
     min-width: 230px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 5px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -619,12 +629,8 @@ main{
     font-weight: 700;
 }
 
-.plan-info-container{
-    padding-top: 30px;
-    height: auto;
-    margin-bottom: 25px;
-}
 .plan-card--title{
+    padding-top: 30px;
     font-size: 1.4rem;
     line-height: 1.8rem;
     font-weight: 500;
@@ -633,20 +639,20 @@ main{
     padding-bottom: 8px;
 }
 .plan-card--price{
-    font-weight: 700;
+    padding: 5px 0;
     font-size: 5.2rem;
+    font-weight: bold;
     line-height: 6.3rem;
-    text-align: center;
-    padding-bottom: 16px;
+    color: black;
     font-family: "Inter";
-    position: relative;
 }
-.plan-card--price-dolar{
+.plan-card--price span{
     font-weight: 500;
     font-size: 1.2rem;
     line-height: 1.5rem;  
     font-family: "Inter";
-    color: #363636;
+    color: #363636; 
+    vertical-align: text-top;
 }
 
 .plan-card--saving{
@@ -656,6 +662,28 @@ main{
     font-weight: 500;
     font-family: "Inter";
     padding: 0 16px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
+
+.plan-card--ca{
+    width: 150px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: var(--off-white);
+    border: 2px solid var(--bitcoin-orange);
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--warn-black);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.plan-card--ca span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/icons/arrow-right\ 1.svg');
+    vertical-align: text-bottom;
+}
+
 
