@@ -158,12 +158,24 @@ main{
 
 /* Tablas HTML */
 
+
+.main-tables-container{
+    display: flex;
+    align-items: center;
+    height: 380px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 .main-currency-table{
+    position: relative;
+    scroll-snap-align: center;
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 0 20px;
     font-family: "Inter", sans-serif;
 }
 
@@ -273,6 +285,7 @@ main{
     font-size: 1.8rem;
     line-height: 2.3rem;
     color: var(--secundary-blue);
+    margin-bottom: 15px;
 }
 
 .main-comisiones-container .comisiones-table--container{
